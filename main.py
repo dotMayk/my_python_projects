@@ -1,15 +1,13 @@
-def city_name():
-    cityName = input("What's the name of the city you grew up? ")
-    return cityName
+def bill_calculator(total, tip, people):
+    amount = (total + (total * (tip / 100))) / people
+    return amount
 
 
-def pet_name():
-    petName = input("What's your pet's name? ")
-    return petName
+print("Welcome to the TIP CALCULATOR!")
 
+bill_total = float(input("What was the total bill? $"))
+tip_percentage = int(input("What percentage tip would you like to give? "))
+people_to_split = int(input("How many people are going to split the bill? "))
 
-def band_name():
-    print("Your band name could be: " + city_name() + " " + pet_name())
-
-print("Welcome to the BAND NAME GENERATOR!")
-band_name()
+amount_per_person = bill_calculator(bill_total, tip_percentage, people_to_split)
+print(f"Each person should pay: {amount_per_person:.2f}")
