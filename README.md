@@ -1,4 +1,4 @@
 # my_python_projects
 
 
-A way to show my progress in programming with Python language
+#1 band_name_generator - Generate a band name based on two variables (city_name, pet_name)
